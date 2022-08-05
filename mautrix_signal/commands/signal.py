@@ -152,7 +152,7 @@ async def invite_link(evt: CommandEvent) -> EventID:
     management_only=False,
     help_section=SECTION_SIGNAL,
     help_text="View the safety number of a specific user",
-    help_args="[--qr] [_phone_]",
+    help_args="[--qr] <_phone_>",
 )
 async def safety_number(evt: CommandEvent) -> None:
     show_qr = evt.args and evt.args[0].lower() == "--qr"
